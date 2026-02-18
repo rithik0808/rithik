@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Architecture Studio</title>
+  <meta name="description" content="Contemporary architecture and interior design studio — portfolio, projects and contact.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">My Architecture Studio</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="site-nav" role="navigation" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" role="region" aria-label="Hero">
+      <div class="container">
+        <h2>Welcome to My Designs</h2>
+        <p class="lead">Beautiful spaces created for real life.</p>
+      </div>
+    </section>
+
+    <section id="about" class="container about" role="region" aria-label="About">
+      <h2>About Me</h2>
+      <p>I make contemporary architecture &amp; interiors focused on light, material clarity and human comfort.</p>
+    </section>
+
+    <section id="projects" class="container projects" role="region" aria-label="Projects">
+      <h2>Projects</h2>
+      <div class="projects-grid" aria-live="polite">
+        <figure class="project-card">
+          <img src="https://via.placeholder.com/800x500?text=Project+1" alt="Interior view of Project 1">
+          <figcaption>
+            <strong>Project 1</strong>
+            <p>Renovation of urban townhouse — light-filled living spaces.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="project-card">
+          <img src="https://via.placeholder.com/800x500?text=Project+2" alt="Exterior view of Project 2">
+          <figcaption>
+            <strong>Project 2</strong>
+            <p>Coastal weekend house — minimal palette and sheltering roof.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="project-card">
+          <img src="https://via.placeholder.com/800x500?text=Project+3" alt="Detail view of Project 3">
+          <figcaption>
+            <strong>Project 3</strong>
+            <p>Adaptive reuse of warehouse into studio apartments.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact" role="region" aria-label="Contact">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Send message</button>
+          <span id="form-status" class="visually-hidden" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+      <p class="contact-info">Or email: <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> My Architecture Studio</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
